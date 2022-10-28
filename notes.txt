@@ -1,0 +1,33 @@
+1. typescript adds strict types to be used in js 
+    ex function add(n,m){
+        return n+m
+    }
+    here add(1,2) returns 3
+    whereas add("1",2) returns 12 
+    type script actually helps us in strict type
+
+2.adds next gen features to old browsers which cannot be used normally,adds decorators which is a meta programming feature,non next gen features some features which doesnt exist in js ,has rich configuration options helps in how code is compiled
+
+//495-496
+1.typescript : browsers dont understand the ts it only understands js so we need a compiler
+2.when  we compile it creates a js file where it converst ts code to js code in the new file
+4. number ,object,array ,boolean etc
+5.we have specifically defined the type of num to be taken as param or args so it throws error
+
+//497-499
+1. typescript can understand what types the element is smartly, you dont have to explicitly tell it
+    ex when you get const nElement = document.getElementById("n"); it understands nElement as HTMLElement 
+2.when you select a input element based on id ts has no way to know it as a value so you need to typecast it which solves the problem
+3.tsc init helps us to set some configuration
+4.strict mode certain things are not allowed which is meant to be allowed to check if it is null
+5. the statement ignores the null value when we know its already exist
+6. any means it can have any type so its not a good use
+
+//500-502
+1.HTMLElement area actually dom objects,to handle type of objects we use ex = >{val:number,timestamp:Date}
+2.here for array ex => const nums:number[] = []
+4. type allows to have its own type alias ex type numorstr = number | string now numorstr can be used anywhere
+5. it also allows to use define structure or type of data structures , interfaces can also be used to force classes and certain methods so it is used heavily
+6.generic which interacts with other type as array is outer type elements in array is number type ex Array<number>
+7. cos we cant use promises async await functionality 
+8. promise either resolves or rejects a value which is generic type
